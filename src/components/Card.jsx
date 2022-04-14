@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Card() {
+    const [rangeValue, setRangeValue] = useState(50);
+    const inputRangeStyle = {
+        background: `linear-gradient(to right, #a5f3eb 0%, #a5f3eb ${rangeValue}%, #eaeefb ${rangeValue}%, #eaeefb 100%)`,
+    }
+
+    const handleRangeValue = (e) => {
+        setRangeValue(e.target.value);
+    }
   return (
     <section className='bg-white py-11 rounded-xl drop-shadow-xl'>
         <div className="flex justify-between items-center mb-5  px-12">
@@ -10,7 +18,14 @@ function Card() {
                 <p className='text-grayish-blue text-default font-bold tracking-wide'>/ month</p>
             </div>
         </div>
-        <div className="px-12"><input type="range" className='w-full mb-14 cursor-pointer' /></div>
+        <div className="px-12">
+            <input 
+                type="range" 
+                className='w-full h-2 mb-14 cursor-pointer outline-none appearance-none rounded-full ' 
+                style={inputRangeStyle}
+                onChange={handleRangeValue}
+            />
+        </div>
         <div className="flex text-default items-center font-semibold  px-12 gap-5 justify-center mb-10 text-grayish-blue">
             <p>Monthly Billing</p>
             <input type="checkbox" className='cursor-pointer' />
