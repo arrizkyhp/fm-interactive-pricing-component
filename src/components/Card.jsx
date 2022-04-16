@@ -67,9 +67,9 @@ function Card() {
   return (
     <section className='bg-white py-11 rounded-xl drop-shadow-xl mb-20'>
         <div className="grid grid-cols-2 grid-rows-[fit-content(200px)_1fr_1fr] md:grid-rows-2  justify-center gap-y-7 items-center mb-8 px-7 md:px-12 w-full">
-            <p className='uppercase text-default text-grayish-blue font-bold tracking-widest col-span-full md:col-[1_/_2] text-center'>{numFormatter(pageViews)} Pageviews</p>
+            <p className='uppercase text-default text-grayish-blue font-bold tracking-widest col-span-full md:col-[1_/_2] text-left'>{numFormatter(pageViews)} Pageviews</p>
             <div className="flex items-center gap-2  col-span-full row-[3_/_4] md:row-span-1 md:col-[2_/_3] justify-center">
-                <p className='text-dark-desaturated-blue text-4xl md:text-5xl font-extrabold'>${price.toFixed(2)}</p>
+                <p className='text-dark-desaturated-blue text-4xl md:text-4xl font-extrabold'>${price.toFixed(2)}</p>
                 <p className='text-grayish-blue text-default font-bold tracking-wide'>/ month</p>
             </div>
                 <Slider onChange={handleRangeValue} className="self-center justify-self-center col-span-full"/>
@@ -77,6 +77,7 @@ function Card() {
        
         <div className="flex text-xs md:text-default items-center font-semibold px-7 md:px-12 gap-2 md:gap-5 justify-center mb-10 text-grayish-blue">
             <p>Monthly Billing</p>
+            <label htmlFor="toggle" className='sr-only'>Toggle</label>
             <input id='toggle' type="checkbox" className='sr-only' onChange={handleDiscount} />
             <label htmlFor="toggle">
                 <span className='toggle-bg w-12 h-6 p-[6px] bg-light-grayish-blue-1 cursor-pointer  rounded-full flex items-center'>

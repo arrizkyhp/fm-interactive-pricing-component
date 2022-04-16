@@ -13,12 +13,17 @@ const Slider = (props) => {
     }
 
   return (
-    <input 
+    <>
+    <label htmlFor="slider" className='sr-only'>Slider</label>
+      <input 
         type="range" 
         className={`w-full h-2  cursor-pointer outline-none appearance-none rounded-full ${className.join(" ")}`} 
         style={inputRangeStyle}
         onChange={handleChange}
+        id="slider"
     />
+    </>
+
   )
 }
 
