@@ -65,7 +65,7 @@ function Card() {
     }
 
   return (
-    <section className='bg-white py-11 rounded-xl drop-shadow-xl'>
+    <section className='bg-white py-11 rounded-xl drop-shadow-xl mb-20'>
         <div className="grid grid-cols-2 grid-rows-[fit-content(200px)_1fr_1fr] md:grid-rows-2  justify-center gap-y-7 items-center mb-8 px-7 md:px-12 w-full">
             <p className='uppercase text-default text-grayish-blue font-bold tracking-widest col-span-full md:col-[1_/_2] text-center'>{numFormatter(pageViews)} Pageviews</p>
             <div className="flex items-center gap-2  col-span-full row-[3_/_4] md:row-span-1 md:col-[2_/_3] justify-center">
