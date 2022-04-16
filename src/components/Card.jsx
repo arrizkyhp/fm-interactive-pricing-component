@@ -69,7 +69,7 @@ function Card() {
         <div className="grid grid-cols-2 grid-rows-[fit-content(200px)_1fr_1fr] md:grid-rows-2  justify-center gap-y-7 items-center mb-8 px-7 md:px-12 w-full">
             <p className='uppercase text-default text-grayish-blue font-bold tracking-widest col-span-full md:col-[1_/_2] text-left'>{numFormatter(pageViews)} Pageviews</p>
             <div className="flex items-center gap-2  col-span-full row-[3_/_4] md:row-span-1 md:col-[2_/_3] justify-center">
-                <p className='text-dark-desaturated-blue text-4xl md:text-4xl font-extrabold'>${price.toFixed(2)}</p>
+                <h1 className='text-dark-desaturated-blue text-4xl md:text-4xl font-extrabold'>${price.toFixed(2)}</h1>
                 <p className='text-grayish-blue text-default font-bold tracking-wide'>/ month</p>
             </div>
                 <Slider onChange={handleRangeValue} className="self-center justify-self-center col-span-full"/>
