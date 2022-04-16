@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- 📌 Solution URL: [Solution](https://github.com/arrizkyhp/fm-crowdfunding-product-page)
-- 🎪 Live Site URL: [Live Site](https://arrizkyhp.github.io/fm-crowdfunding-product-page/)
+- 📌 Solution URL: [Solution](https://github.com/arrizkyhp/fm-interactive-pricing-component)
+- 🎪 Live Site URL: [Live Site](https://arrizkyhp.github.io/fm-interactive-pricing-component/)
 
 ## My process
 
